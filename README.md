@@ -17,9 +17,13 @@
 
 ## 編譯
 
+iOS 8 or later
+
 此 App 使用以下 framework, 編譯前請先下載並設置
 
 [Ono](https://github.com/mattt/Ono)
+
+[AdMob](https://apps.admob.com/)
 
 [LeanCloud](https://leancloud.cn) iOS Framework
 
