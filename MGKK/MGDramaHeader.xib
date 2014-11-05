@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MGDramaHeader" id="Sgs-48-xSM" userLabel="MGDramaHeader" customClass="MGDramaHeader">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQK-jq-VuL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7w0-jt-Agj" userLabel="_content">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="61"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIO-nM-0VM" userLabel="_favButton">
+                                    <rect key="frame" x="8" y="9" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="Mkb-fJ-ldW"/>
+                                        <constraint firstAttribute="height" constant="44" id="nSW-bh-uQk"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" backgroundImage="Favorite">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="favBurronDidClicked:" destination="Sgs-48-xSM" eventType="touchUpInside" id="tVq-51-KSN"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXS-oW-wQw" userLabel="_nameLabel">
+                                    <rect key="frame" x="60" y="0.0" width="46" height="61"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZV-mV-3ed" userLabel="_finishLabel">
+                                    <rect key="frame" x="555" y="0.0" width="37" height="61"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="QIO-nM-0VM" firstAttribute="leading" secondItem="7w0-jt-Agj" secondAttribute="leading" constant="8" id="7VI-We-rHB"/>
+                                <constraint firstItem="xXS-oW-wQw" firstAttribute="leading" secondItem="QIO-nM-0VM" secondAttribute="trailing" constant="8" id="B1a-to-aOb"/>
+                                <constraint firstAttribute="bottom" secondItem="qZV-mV-3ed" secondAttribute="bottom" id="Nhu-WF-UBJ"/>
+                                <constraint firstAttribute="bottom" secondItem="xXS-oW-wQw" secondAttribute="bottom" id="gQo-oQ-R1J"/>
+                                <constraint firstAttribute="centerY" secondItem="QIO-nM-0VM" secondAttribute="centerY" id="iu0-CH-gI3"/>
+                                <constraint firstItem="xXS-oW-wQw" firstAttribute="top" secondItem="7w0-jt-Agj" secondAttribute="top" id="lN1-pm-olt"/>
+                                <constraint firstItem="qZV-mV-3ed" firstAttribute="top" secondItem="7w0-jt-Agj" secondAttribute="top" id="px7-5j-hp1"/>
+                                <constraint firstAttribute="trailing" secondItem="qZV-mV-3ed" secondAttribute="trailing" constant="8" id="zRJ-z8-GLd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="7w0-jt-Agj" firstAttribute="leading" secondItem="nQK-jq-VuL" secondAttribute="leading" id="STM-bP-Bgp"/>
+                        <constraint firstItem="7w0-jt-Agj" firstAttribute="top" secondItem="nQK-jq-VuL" secondAttribute="top" id="UAc-X0-f1Q"/>
+                        <constraint firstAttribute="bottom" secondItem="7w0-jt-Agj" secondAttribute="bottom" constant="2" id="VU0-mW-lNa"/>
+                        <constraint firstAttribute="trailing" secondItem="7w0-jt-Agj" secondAttribute="trailing" id="diq-Jt-0ix"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nQK-jq-VuL" secondAttribute="bottom" id="7Nk-vM-SX5"/>
+                <constraint firstItem="nQK-jq-VuL" firstAttribute="top" secondItem="Sgs-48-xSM" secondAttribute="top" id="NAb-Wa-dK3"/>
+                <constraint firstAttribute="trailing" secondItem="nQK-jq-VuL" secondAttribute="trailing" id="QIP-u9-UDD"/>
+                <constraint firstItem="nQK-jq-VuL" firstAttribute="leading" secondItem="Sgs-48-xSM" secondAttribute="leading" id="uee-DH-gcI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="content" destination="7w0-jt-Agj" id="xU2-Y4-Y0b"/>
+                <outlet property="favButton" destination="QIO-nM-0VM" id="P8x-SF-RIE"/>
+                <outlet property="finishLabel" destination="qZV-mV-3ed" id="9oO-LD-1f5"/>
+                <outlet property="nameLabel" destination="xXS-oW-wQw" id="1qy-Ug-OEm"/>
+            </connections>
+            <point key="canvasLocation" x="-392" y="-103.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Favorite" width="44" height="44"/>
+    </resources>
+</document>
