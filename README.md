@@ -1,6 +1,6 @@
 # 美劇看看
 
-![]()
+![](https://raw.githubusercontent.com/shinrenpan/MGKK/master/MGKK/Images.xcassets/AppIcon.appiconset/Icon-76.png)
 
 [Demo video](http://youtu.be/NSdrNZ7s49I)
 
@@ -37,7 +37,7 @@
 
 Dramas Table 共有 4 個欄位 (都小寫), 分別為:
 
-- data ( JSON Array )
+- __data ( JSON Array )__
 
 資料格式為 JSON Array 格式, 放置影片網址, 例如:
 ```json
